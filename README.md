@@ -24,6 +24,8 @@ MonDiag arena is divided into four parts:
 
 4.	**Utility** - Place which gives you an option to login, send feedback, etc.
 
+![Dashboard](https://github.com/prchanda/MonDiag/blob/Images/Dashboard.PNG)
+
 
 ### Workflow
 -----------------
