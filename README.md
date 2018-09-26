@@ -40,7 +40,7 @@ MonDiag arena is divided into four parts:
 
 
 ## Some of the Troubleshooting Scenarios
---------------------------------
+---------------------------------------------
 
 - ### Running RCA on failed Activity Log Alert
 
