@@ -39,10 +39,10 @@ MonDiag arena is divided into four parts:
 4.	Click on the Apply button.
 
 
-## Some of the Troubleshooting Scenarios
+### Some of the Troubleshooting Scenarios
 ---------------------------------------------
 
-- ### Running RCA on failed Activity Log Alert
+- #### Scenario 1 : Running RCA on failed Activity Log Alert
 
 ##### Symptom
 An activity log alert setup to track deletion of virtual network didn't get trigger, although we can see activity log generated for the corresponding activity.
@@ -74,7 +74,7 @@ Based on the assessment, recommendation section will guide you what are the step
 ![Recommendation](https://github.com/prchanda/MonDiag/blob/Images/Recommendation.PNG)
 
 
-- ### Retreive Action Group Details
+- #### Scenario 2 : Retreive Action Group Details
 ---------------------------------
 
 1.	Choose the **Action Group Definition** option from the *Action Panel*.
