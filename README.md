@@ -20,7 +20,7 @@ MonDiag arena is divided into four parts:
 
 2.	**Control Panel** - Place where you can choose the scope of troubleshooting. Ex- Choose resource, Set TimeSpan of troubleshooting, etc.
 
-3.	**Dashboard** - Place you get your queried information / results.
+3.	**Dashboard** - Place where you get your queried information / results.
 
 4.	**Utility** - Place which gives you an option to login, send feedback, etc.
 
@@ -45,7 +45,7 @@ MonDiag arena is divided into four parts:
 - #### Scenario 1 : Running RCA on failed Activity Log Alert
 
 ##### Symptom
-An activity log alert setup to track deletion of virtual network didn't get trigger, although we can see activity log generated for the corresponding activity.
+An activity log alert to track deletion of virtual network didn't get trigger, although we can see activity log generated for the corresponding activity.
 
 ##### Workflow
 
