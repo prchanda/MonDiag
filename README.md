@@ -75,7 +75,6 @@ Based on the assessment, recommendation section will guide you what are the step
 
 
 - #### Scenario 2 : Retreive Action Group Details
----------------------------------
 
 1.	Choose the **Action Group Definition** option from the *Action Panel*.
 
