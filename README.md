@@ -1,28 +1,28 @@
 # MonDiag
-MonDiag is a simple self-help utility which will help you to troubleshoot most of the Azure Monitor issues. It comes with automatic root cause analysis engine to diagnose various scenarios like:
+MonDiag is a simple self-help utility which will help you to troubleshoot most of the Azure Monitor issues. It comes with an automatic root-cause analysis engine to diagnose various scenarios like:
 
-1.	Activity Log Alert didn't fire, although I see an entry for the corresponding activity in the activity logs.
+1.	Activity Log Alert didn't fire, although I see an entry for the corresponding activity in the Activity Logs.
 
-2.	Classic Alert notification not received although alert criteria seems to have satisfied.
+2.	Classic Alert notification not received although alert criteria seems to have been satisfied.
 
-3.	Metric evaluation condition seems to have satisfied, however metric alert notification is not received.
+3.	Metric evaluation condition seems to have been satisfied, however metric alert notification is not received.
 
 
-Apart from providing the RCA, the tool provides OneStop information about alert definition, action group details, autoscale settings, etc.
+Apart from providing the root-cause analysis, the tool provides centralized information about alert definitions, action group details, autoscale settings, etc.
 
 
 ### Topology
 ------------
 
-MonDiag arena is divided into four parts:
+The MonDiag interface is divided into four areas:
 
-1.	**Action Panel** - Place which gives you an option to choose your intended action. Ex- Run RCA, Get Alert definition, etc.
+1.	**Action Panel (top left)** - The area that provides options to choose your intended action. For example - Run Root-Cause Analysis, Show Alert Definitions, etc.
 
-2.	**Control Panel** - Place where you can choose the scope of troubleshooting. Ex- Choose resource, Set TimeSpan of troubleshooting, etc.
+2.	**Control Panel (bottom left)** - The area where you can select the scope for troubleshooting. For example - Subscription, Resource Groups, Resources, Timespan, etc.
 
-3.	**Dashboard** - Place where you get your queried information / results.
+3.	**Dashboard (main window)** - The area where the results will be displayed.
 
-4.	**Utility** - Place which gives you an option to login, send feedback, etc.
+4.	**Utility (right vertical)** - The area that provides the option to login to your Azure account, send feedback, etc.
 
 ![Dashboard](https://github.com/prchanda/MonDiag/blob/Images/Dashboard.PNG)
 
@@ -30,46 +30,44 @@ MonDiag arena is divided into four parts:
 ### Workflow
 -----------------
 
-1.	Login to your Azure subscription. If you are already authenticated, then you don't need to re-enter your credentials. You can login with a different azure account as well using change account button on the top-right corner of the tool.
+1.	Login to your Azure subscription. If you are already authenticated, then you don't need to re-enter your credentials. You can login with a different Azure account by clicking the account button in the top-right corner of the tool.
 
-2.	Choose your troubleshooting scope from the Control Panel. For example if you want to fetch the definition of all the activity log alerts across a resource group, select the corresponding resource group from the **Resource Group** dropdown list or if you want to get information about a particular activity log alert, please choose the correct resource from the **Resource** dropdown list.
+2.	Choose your troubleshooting scope from the Control Panel area (bottom left). For example if you want to fetch the definition of all the Activity Log Alerts across a Resource Group, select the corresponding Resource Group from the **Resource Group** dropdown list or, if you want to get information about a particular Activity Log Alert, choose the specific Resource from the **Resource** dropdown list.
 
-3.	Select the intended action you want to perform from the action panel. For example if you want to retrieve the action group definition, click on "Action Group Definition" option.
+3.	Select the intended action you want to perform from the Action Panel (top left). For example if you want to retrieve the Action Group Definition, click the "Action Group Definition" option.
 
 4.	Click on the Apply button.
 
 
-### Some of the Troubleshooting Scenarios
+### Example Troubleshooting Scenarios
 ---------------------------------------------
 
-- #### Scenario 1 : Running RCA on failed Activity Log Alert
+#### Scenario 1 : Running Root-Cause Analysis on failed Activity Log Alerts
 
 ##### Symptom
-An activity log alert to track deletion of virtual network didn't get trigger, although we can see activity log generated for the corresponding activity.
+An Activity Log Alert to track the deletion of Virtual Networks was not trigger, although we can see the Activity Log generated for the corresponding activity.
 
 ##### Workflow
 
-1.	Choose the **Root Cause Analysis** option from the *Action Panel*.
+1.	Choose the **Root-Cause Analysis** option from the *Action Panel*.
 
-2.	Choose the category of the problem or issue from the Dashboard. In this case we will choose the first option - 
+2.	Choose the category of the problem or issue from the Dashboard. In this case we will choose the first option - "*One of my Activity Log Alerts didn't fire, although I see an entry for the corresponding activity in the Activity Logs.*"
 
-    "*One of my Activity Log Alert didn't fire, although I see an entry for the corresponding activity in the activity logs.*"
+3.	Select the Activity Log Alert in reference from the *Resource* dropdown list.
 
-3.	Select the activity log alert in concern from the *Resource* dropdown list.
-
-4.	Set the Start and End time during which you want the RCA.
+4.	Set the Start and End time during the time window in which you want the Root-Cause Analysis.
 
 5.	Click on the Apply button.
 
 ##### Assessment
 
-This section will tell you which of the RCA evaluation step(s) failed. For example in the below screenshot alert criteria or condition didn't get satisfied as depicted by the cross mark.
+This section will tell you which of the Root-Cause Analysis evaluation step(s) failed. For example in the screenshot below, the Alert criteria or condition was not satisfied, as is depicted by the red X mark.
 
 ![Assessment](https://github.com/prchanda/MonDiag/blob/Images/Assessment.PNG)
 
 ##### Recommendation
 
-Based on the assessment, recommendation section will guide you what are the steps you need perform to resolve or fix the issue. For example as per the below recommendation, you need to fix the alert criteria because the expected alert condition for status is set to 'Started', whereas in reality the actual activity was 'Succeeded', hence the alert didn't get trigger as expected.
+Based on the assessment, the Recommendation section will guide you with what are the steps you need to perform to resolve or fix the issue. For example, in the example below, you need to fix the Alert criteria because the expected alert condition for status is set to 'Started', whereas in reality the actual activity was 'Succeeded', hence the alert wasn't trigger as expected.
 
 ![Recommendation](https://github.com/prchanda/MonDiag/blob/Images/Recommendation.PNG)
 
@@ -78,7 +76,7 @@ Based on the assessment, recommendation section will guide you what are the step
 
 1.	Choose the **Action Group Definition** option from the *Action Panel*.
 
-2.	Select the Action Group for which you want to fetch the details from the *Resource* dropdown list, or you can also retreive Action Group details across a resource group or whole subscription by selecting appropriate scope.
+2.	Select the Action Group that you want to retrieve the details for from the *Resource* dropdown list, or you can also retreive Action Group details across a Resource Group or whole Subscription by selecting the appropriate scope.
 
 3.	Click on the Apply button.
 
