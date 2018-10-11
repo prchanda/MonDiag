@@ -72,7 +72,7 @@ Based on the assessment, the Recommendation section will guide you with what are
 ![Recommendation](https://github.com/prchanda/MonDiag/blob/Images/Recommendation.PNG)
 
 
-- #### Scenario 2 : Retreive Action Group Details
+#### Scenario 2 : Retreive Action Group Details
 
 1.	Choose the **Action Group Definition** option from the *Action Panel*.
 
